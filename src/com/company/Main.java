@@ -1,7 +1,5 @@
 package com.company;
 
-import java.sql.SQLOutput;
-import java.time.Year;
 import java.util.*;
 
 public class Main {
@@ -50,7 +48,6 @@ public class Main {
         whichDistrictBetter(districtArray);
     }
 
-
     public static int numberOfOfficers(ArrayList<District> districtArray) {
         int numberOfOfficers = 0;
         for (District district : districtArray) {
@@ -65,82 +62,11 @@ public class Main {
             if (districtArray.get(i).calculateAvgLevelInDistrict() ==
                     districtArray.get(j).calculateAvgLevelInDistrict()) {
                 System.out.println("Both district are equally good");
-            } else
-                if (districtArray.get(i).calculateAvgLevelInDistrict() >
+            } else if (districtArray.get(i).calculateAvgLevelInDistrict() >
                     districtArray.get(j).calculateAvgLevelInDistrict()) {
                 System.out.println("Best district is: " + districtArray.get(i).getTitle());
             } else
                 System.out.println("Best district is: " + districtArray.get(j).getTitle());
         }
     }
-
-//    public static int whichIsBetter(ArrayList<District> districtArray) {
-//        if (calculateAvgLevelInDistrict == district2.calculateAvgLevelInDistrict()) {
-//            System.out.println("Both districts are equally good.");
-//        } else if {
-//            (district1.calculateAvgLevelInDistrict() > district2.calculateAvgLevelInDistrict())
-//            System.out.println("District A is better.");
-//        } else {
-//            System.out.println("District B is better");
-//        }
-//    }
-
-//
-//
-//        officers = new ArrayList<>();
-//
-//        districts.add(new District("Sea", "Jurmala", 2, officers));
-//
-//        districts.get(0).addNewOfficer(new Officer(""));
-//
-//
-//       /* ArrayList<Officer> DistrictA = new ArrayList<Officer>();
-//        DistrictA.add(one);
-//        DistrictA.add(two);
-//        DistrictA.add(three);
-//        System.out.println(DistrictA);
-//        for (Officer value : DistrictA) {
-//            System.out.println(value);
-//        }
-//
-//        ArrayList<Officer> DistrictB = new ArrayList<Officer>();
-//        DistrictB.add(four);
-//        DistrictB.add(five);
-//        DistrictB.add(six);
-//        DistrictB.add(seven);
-//        System.out.println(DistrictB);
-//        for (Officer value : DistrictB) {
-//            System.out.println(value);
-//        }
-//
-//        A.addNewOfficer(one);
-//        A.addNewOfficer(two);
-//        A.addNewOfficer(three);
-//        B.addNewOfficer(four);
-//        B.addNewOfficer(five);
-//        B.addNewOfficer(six);
-//        B.addNewOfficer(seven);
-//        B.removeOfficer(two);
-//        break;
-//    }*/
-//
-//
-//        System.out.println("New officer(s) in the database: " + officers);
-//        //officers.stream().count();
-//
-//
-//       /* A.addNewOfficer(officers.get(0));
-//        A.addNewOfficer(officers.get(1));
-//        A.addNewOfficer(officers.get(2));
-//        B.addNewOfficer(officers.get(3));
-//        B.addNewOfficer(officers.get(4));
-//        B.addNewOfficer(officers.get(5));
-//        B.addNewOfficer(officers.get(6));
-//*/
-//        // B.removeOfficer(officers.get(1));
-//
-//        System.out.println("There are the following Officers in the database: " + officers.toString());
-//        System.out.println((A.toString()));
-//        System.out.println(B.toString());
-
 }
